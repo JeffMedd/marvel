@@ -30,7 +30,7 @@ https.get(queryURL, (res) => {
     });
   
     res.on('end', () => {
-      console.log("data is:" + JSON.stringify(data));
+      console.log("data is:" + JSON.parse(data));
     });
   
   }).on("error", (err) => {
